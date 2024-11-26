@@ -46,14 +46,18 @@ public class Cuenta {
         }  
     }
     
-    boolean retiro(int x){
+    retiro(int x){
         
         boolean peticion = true;
         
-        if(peticion == true){
-                
-            Saldo = Saldo - x;
+        if(peticion == true){    
             double cuatropormil = x*4/1000;
+            double totalretiro = x + cuatropormil;
+            if (Saldo< totalretiro){
+                System.out.printl("Su saldo no es suficiente")
+                
+            
+            
             Saldo = Saldo - cuatropormil;
             return true;
         }else{
