@@ -6,4 +6,7 @@ package com.mycompany.ejemplobanco;
  */
 import java.util.*;
 public class EjemploBanco {
+  public static void main(String[] args) {
+    
+    
 }
