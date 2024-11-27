@@ -13,16 +13,17 @@ public class EjemploBanco {
         Cuenta cuentaJ = new Cuenta(Juan); 
         int operacion;
         operacion = Nestor.bienvenida();
-        if(operacion == 1){
         double saldo = cuentaN.getSaldo();
-        double nuevoSaldo = Nestor.retirar(saldo);
-        cuentaN.setSaldo(nuevosaldo);
+        if(operacion == 1){
+          double nuevoSaldo = Nestor.retirar(saldo);
+          cuentaN.setSaldo(nuevosaldo);
         }
         if(operacion == 2){
-        double saldo = cuentaN.getSaldo();
-        double nuevoSaldo = Nestor.consignar(saldo);
-        cuentaN.setSaldo(nuevosaldo);
+          double nuevoSaldo = Nestor.consignar(saldo);
+          cuentaN.setSaldo(nuevosaldo);
         }
-        else{Nestor.Transferir();}
+        else{double nuevoSaldo = Nestor.Transferir(saldo);
+                        
+            }
     }
 }
