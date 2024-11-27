@@ -50,11 +50,24 @@ public class Cliente {
         }
         return Saldo;
     }
-    public void consignar(){
+    public double consignar(){
         s.nextLine();
-        System.out.println("Digite el id de la cuenta al cual va a consignar:")
-        idDelConsignado = s.nextInt();
-        
+        while (true){
+            try {
+                System.out.println("Digite la cantidad a consignar:")
+                cantidad = s.nextDouble();
+                if (opcion <= 0) {
+                    throw new IllegalArgumentException("La cantidad debe ser mayor a 0");
+                }else{
+                break;}
+            } catch (IllegalArgumentException e) {
+                System.out.println("Error: " + e.getMessage());
+            } catch (Exception e) {
+                System.out.println("Error: Debe ingresar un número.");
+                s.nextLine();
+            }
+        }
+        return cantidad;
     }
     public void Transferir(){}
  }
