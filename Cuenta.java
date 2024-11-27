@@ -15,10 +15,13 @@ public class Cuenta {
     private double ID;
     private double Saldo;
 
+    long countid = 1
+    
     public Cuenta(Cliente x){
         this.Titular = x.Nombre;
-        this.ID = 
+        this.ID = countid
         this.Saldo = 0;
+        countid++
     }
     public double getSaldo(){
         return Saldo;
