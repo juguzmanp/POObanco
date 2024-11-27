@@ -15,6 +15,11 @@ public class Cuenta {
     private double ID;
     private double Saldo;
 
+    public Cuenta(Cliente x){
+        this.Titular = x.Nombre;
+        this.ID = 
+        this.Saldo = 0;
+    }
     public double getSaldo(){
         return Saldo;
     }
