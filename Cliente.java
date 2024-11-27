@@ -11,7 +11,6 @@ package com.mycompany.ejemplobanco;
 import java.util.*;
 public class Cliente {
     public String nombre;
-    private long identificacion;
     Scanner s = new Scanner(System.in);
     public int bienvenida(){
         int opcion;
@@ -55,11 +54,11 @@ public class Cliente {
         s.nextLine();
         while (true){
             try {
-                System.out.println("Digite la cantidad a consignar:")
-                cantidad = s.nextDouble();
-                if (opcion <= 0) {
+                System.out.println("Digite la cantidad a consignar:");
+                double cantidad = s.nextDouble();
+                if (cantidad <= 0) {
                     throw new IllegalArgumentException("La cantidad debe ser mayor a 0");
-                }else{
+                }else{Saldo = Saldo + cantidad;
                 break;}
             } catch (IllegalArgumentException e) {
                 System.out.println("Error: " + e.getMessage());
@@ -68,9 +67,13 @@ public class Cliente {
                 s.nextLine();
             }
         }
-        Saldo = Saldo + cantidad;
         return Saldo;
     }
     
-    public void Transferir(){}
+    public void transferir(double saldo){
+        s.nextLine();
+        System.out.println("Digite el ID de la cuenta a la cual va a consignar:");
+        long idATransferir = s.nextLong();
+        
+    }
  }
