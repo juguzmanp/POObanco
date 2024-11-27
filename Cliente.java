@@ -35,7 +35,7 @@ public class Cliente {
         return opcion;
     }
 
-    public void retirar(double Saldo){
+    public double retirar(double Saldo){
         s.nextLine();
         System.out.println("Ingrese el valor que desea retirar");
         double x = s.nextDouble();
@@ -48,6 +48,7 @@ public class Cliente {
             Saldo = Saldo - totalretiro;
             System.out.println("Se realizo exitosamente el retiro");
         }
+        return Saldo;
     }
     public void consignar(){}
     public void Transferir(){}
