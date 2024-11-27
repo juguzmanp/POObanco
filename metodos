@@ -1,6 +1,6 @@
 public void retirar(){
   System.out.println("Ingrese el valor que desea retirar");
-  double x = 
+  double x = s.nextDouble();
   double cuatropormil = x*4/1000;
   double totalretiro = x + cuatropormil;
   if (Saldo < totalretiro){
@@ -10,3 +10,13 @@ public void retirar(){
     System.out.printl("Se realizo exitosamente el retiro");
   }
 }
+
+
+
+
+// import java.util.*; //para usar Scanner
+public class ejercicio18 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Ingrese un numero entero");
+        long num = s.nextInt(); //
