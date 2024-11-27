@@ -72,8 +72,8 @@ public class Cliente {
     
     public void transferir(double saldo){
         s.nextLine();
-        System.out.println("Digite el ID de la cuenta a la cual va a consignar:");
-        long idATransferir = s.nextLong();
+        System.out.println("Digite el El monto a transferir");
+        double monto = s.nextDouble();
         
     }
  }
