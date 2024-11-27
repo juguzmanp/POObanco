@@ -1,2 +1,4 @@
 public void retirar(){
-
+  System.out.println("Ingrese el valor que desea retirar");
+  
+}
