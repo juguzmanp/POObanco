@@ -16,10 +16,12 @@ public class EjemploBanco {
         if(operacion == 1){
         double saldo = cuentaN.getSaldo();
         double nuevoSaldo = Nestor.retirar(saldo);
+        cuentaN.setSaldo(nuevosaldo);
         }
         if(operacion == 2){
-        double cambioSaldo = Nestor.consignar();
-        
+        double saldo = cuentaN.getSaldo();
+        double nuevoSaldo = Nestor.consignar();
+        cuentaN.setSaldo(nuevosaldo);
         }
         else{Nestor.Transferir();}
     }
