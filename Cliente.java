@@ -50,7 +50,8 @@ public class Cliente {
         }
         return Saldo;
     }
-    public double consignar(){
+    
+    public double consignar(double Saldo){
         s.nextLine();
         while (true){
             try {
@@ -67,7 +68,9 @@ public class Cliente {
                 s.nextLine();
             }
         }
-        return cantidad;
+        Saldo = Saldo + cantidad;
+        return Saldo;
     }
+    
     public void Transferir(){}
  }
