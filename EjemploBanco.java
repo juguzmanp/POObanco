@@ -20,7 +20,7 @@ public class EjemploBanco {
         }
         if(operacion == 2){
         double saldo = cuentaN.getSaldo();
-        double nuevoSaldo = Nestor.consignar();
+        double nuevoSaldo = Nestor.consignar(saldo);
         cuentaN.setSaldo(nuevosaldo);
         }
         else{Nestor.Transferir();}
