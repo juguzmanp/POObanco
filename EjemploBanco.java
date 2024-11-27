@@ -15,7 +15,7 @@ public class EjemploBanco {
         operacion = Nestor.bienvenida();
         if(operacion == 1){
         double saldo = cuentaN.getSaldo();
-        Nestor.retirar(saldo);
+        double nuevoSaldo = Nestor.retirar(saldo);
         }
         if(operacion == 2){
         Nestor.consignar();}
