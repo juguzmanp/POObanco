@@ -50,6 +50,11 @@ public class Cliente {
         }
         return Saldo;
     }
-    public void consignar(){}
+    public void consignar(){
+        s.nextLine();
+        System.out.println("Digite el id de la cuenta al cual va a consignar:")
+        idDelConsignado = s.nextInt();
+        
+    }
     public void Transferir(){}
  }
