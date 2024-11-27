@@ -18,7 +18,9 @@ public class EjemploBanco {
         double nuevoSaldo = Nestor.retirar(saldo);
         }
         if(operacion == 2){
-        Nestor.consignar();}
+        double cambioSaldo = Nestor.consignar();
+        
+        }
         else{Nestor.Transferir();}
     }
 }
